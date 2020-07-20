@@ -1,7 +1,7 @@
 .footer__top {
   display: flex;
   justify-content: center;
-  padding: 90px 0px;
+  padding: 60px 0px;
   background: #232328;
 }
 
@@ -32,6 +32,10 @@
   margin-right: 10px;
 }
 
+.footer__social-media-list-item-container:last-child {
+  margin-right: 0px;
+}
+
 .footer__social-media-list-item {
   width: 42px;
   height: 42px;
@@ -45,5 +49,17 @@
 }
 
 .footer__bottom {
+  display: flex;
+  padding: 25px 0px;
+  background: #1d1d21;
+  justify-content: center;
+}
 
+.footer__bottom-container {
+  width: 970px;
+  text-align: center;
+}
+
+.footer__bottom-text {
+  color: #666666;
 }

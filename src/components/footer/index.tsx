@@ -31,16 +31,10 @@ const Footer = ({ siteTitle }) => {
           <SocialMediaList list={socialMediaList} />
         </div>
       </div>
-      <div
-        style={{
-          background: "#1d1d21",
-          textAlign: "center",
-          padding: "25px 0x",
-        }}
-      >
-        <div style={{ width: "970px" }}>
-          <p style={{ color: "#666666" }}>
-            {`© ${new Date().getFullYear()} ${siteTitle}`}
+      <div className="footer__bottom">
+        <div className="footer__bottom-container">
+          <p className="footer__bottom-text">
+            {`© ${new Date().getFullYear()} - ${siteTitle}`}
           </p>
         </div>
       </div>
@@ -56,13 +50,4 @@ Footer.defaultProps = {
   siteTitle: ``,
 }
 
-export default Footer
-
-// export const query = graphql`
-//   query FooterQuery {
-//     strapiSocialMedia {
-//       url
-//       slug
-//     }
-//   }
-// `
+export default Footer;

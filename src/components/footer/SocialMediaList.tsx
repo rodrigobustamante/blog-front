@@ -4,7 +4,7 @@ import SocialMediaItem from './SocialMediaItem'
 
 import "./styles.scss"
 
-const SocialMediaList = ({ list }, index) => (
+const SocialMediaList = ({ list }) => (
   <ul className="footer__social-media-list">
     {list.map(({ link, slug }) => (
       <SocialMediaItem key={slug} icon={slug} link={link} />
